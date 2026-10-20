@@ -4,7 +4,7 @@
 
 외부 라이브러리 없이 순수 HTML, CSS, JavaScript만으로 만든 반응형 포트폴리오 웹사이트입니다. 화면을 그리는 데서 그치지 않고 **사용자 이벤트 → 상태 변경 → 화면 업데이트** 흐름이 코드에서 드러나도록 구성했습니다. 이 흐름은 다음 미션인 React의 상태-렌더링 모델의 기초가 됩니다.
 
-- **배포 URL**: https://ficklebobo.dev/Codyssey-B1-1/
+- **배포 URL**: https://ficklebobo.github.io/Codyssey-B1-1/
 - **저장소**: https://github.com/FickleBoBo/Codyssey-B1-1
 
 ### 구현 범위
