@@ -11,7 +11,6 @@
   --color-border: #e1e3ee;
   --color-error: #d63031;
   --color-success: #00875a;
-  --color-header-bg: transparent;
   --color-header-bg-scrolled: rgba(255, 255, 255, 0.92);
   --shadow-sm: 0 2px 8px rgba(30, 31, 43, 0.08);
   --shadow-md: 0 10px 24px rgba(30, 31, 43, 0.14);
@@ -66,9 +65,6 @@ body {
   line-height: 1.7;
   color: var(--color-text);
   background-color: var(--color-bg);
-  transition:
-    background-color var(--transition),
-    color var(--transition);
 }
 
 img {
@@ -111,7 +107,7 @@ p {
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 100;
-  background-color: var(--color-header-bg);
+  background-color: transparent;
   transition:
     background-color var(--transition),
     box-shadow var(--transition);
@@ -187,14 +183,11 @@ p {
   border: 1px solid var(--color-border);
   border-radius: 50%;
   cursor: pointer;
-  transition:
-    background-color var(--transition),
-    transform var(--transition);
+  transition: background-color var(--transition);
 }
 
 .icon-btn:hover {
   background-color: var(--color-bg-alt);
-  transform: translateY(-2px);
 }
 
 .hamburger {
@@ -341,14 +334,6 @@ p {
   border: 1px solid var(--color-border);
   border-radius: 999px;
   box-shadow: var(--shadow-sm);
-  transition:
-    transform var(--transition),
-    box-shadow var(--transition);
-}
-
-.skill-item:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-md);
 }
 
 /* Projects (Grid + 상태 UI) */
@@ -379,7 +364,6 @@ p {
 .project-name {
   margin-bottom: var(--space-xs);
   font-size: 1.15rem;
-  word-break: break-word;
 }
 
 .project-name a {
@@ -466,20 +450,10 @@ p {
   background-color: var(--color-surface);
   border: 2px solid var(--color-border);
   border-radius: var(--radius);
-  transition:
-    border-color var(--transition),
-    box-shadow var(--transition);
 }
 
 .form-group textarea {
   resize: vertical;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(108, 92, 231, 0.25);
 }
 
 .form-group .invalid {
@@ -607,7 +581,6 @@ p {
 
   .about {
     flex-direction: row;
-    align-items: center;
     gap: var(--space-lg);
   }
 
