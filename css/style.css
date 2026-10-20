@@ -1,6 +1,4 @@
-/* ==========================================================
-   Variables
-   ========================================================== */
+/* Variables */
 :root {
   --color-bg: #ffffff;
   --color-bg-alt: #f4f5fb;
@@ -48,9 +46,7 @@
   --shadow-md: 0 10px 24px rgba(0, 0, 0, 0.55);
 }
 
-/* ==========================================================
-   Base (mobile first)
-   ========================================================== */
+/* Base (mobile first) */
 *,
 *::before,
 *::after {
@@ -103,9 +99,7 @@ h1, h2, h3, p {
   outline-offset: 2px;
 }
 
-/* ==========================================================
-   Header / Navigation (Flexbox)
-   ========================================================== */
+/* Header / Navigation (Flexbox) */
 .site-header {
   position: fixed;
   inset: 0 0 auto 0;
@@ -217,9 +211,7 @@ h1, h2, h3, p {
   transform: translateY(-6px) rotate(-45deg);
 }
 
-/* ==========================================================
-   Buttons
-   ========================================================== */
+/* Buttons */
 .btn {
   display: inline-block;
   padding: 0.75rem 1.5rem;
@@ -259,9 +251,7 @@ h1, h2, h3, p {
   background-color: var(--color-primary);
 }
 
-/* ==========================================================
-   Hero
-   ========================================================== */
+/* Hero */
 .hero {
   display: flex;
   align-items: center;
@@ -297,9 +287,7 @@ h1, h2, h3, p {
   gap: var(--space-sm);
 }
 
-/* ==========================================================
-   Sections
-   ========================================================== */
+/* Sections */
 .section {
   padding-block: var(--space-xl);
 }
@@ -360,9 +348,7 @@ h1, h2, h3, p {
   box-shadow: var(--shadow-md);
 }
 
-/* ==========================================================
-   Projects (Grid + 상태 UI)
-   ========================================================== */
+/* Projects (Grid + 상태 UI) */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -451,9 +437,7 @@ h1, h2, h3, p {
   }
 }
 
-/* ==========================================================
-   Contact Form
-   ========================================================== */
+/* Contact Form */
 .contact-form {
   max-width: 600px;
 }
@@ -508,9 +492,7 @@ h1, h2, h3, p {
   color: var(--color-success);
 }
 
-/* ==========================================================
-   Footer / Scroll-top
-   ========================================================== */
+/* Footer / Scroll-top */
 .site-footer {
   padding-block: var(--space-md);
   color: var(--color-text-muted);
@@ -575,9 +557,7 @@ h1, h2, h3, p {
   background-color: var(--color-primary-hover);
 }
 
-/* ==========================================================
-   Scroll reveal (JS 활성 시에만 숨김 → 미지원 환경에서도 콘텐츠 보장)
-   ========================================================== */
+/* Scroll reveal (JS 활성 시에만 숨김 → 미지원 환경에서도 콘텐츠 보장) */
 .js .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -602,9 +582,7 @@ h1, h2, h3, p {
   }
 }
 
-/* ==========================================================
-   Tablet: 768px+
-   ========================================================== */
+/* Tablet: 768px+ */
 @media (min-width: 768px) {
   .hamburger {
     display: none;
@@ -646,9 +624,7 @@ h1, h2, h3, p {
   }
 }
 
-/* ==========================================================
-   Desktop: 1024px+
-   ========================================================== */
+/* Desktop: 1024px+ */
 @media (min-width: 1024px) {
   .container {
     padding-inline: var(--space-lg);

@@ -84,7 +84,7 @@ const projectState = { status: 'loading', repos: [], error: '' };
 
 const card = ({ name, html_url, description, language, stargazers_count, updated_at }) => `
   <article class="project-card">
-    <h3 class="project-name"><a href="${html_url}" target="_blank" rel="noopener noreferrer">${escapeHtml(name)}</a></h3>
+    <h3 class="project-name"><a href="${escapeHtml(html_url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(name)}</a></h3>
     <p class="project-desc">${escapeHtml(description ?? '설명이 없습니다.')}</p>
     <p class="project-meta">
       <span>${escapeHtml(language ?? '-')}</span>
@@ -108,7 +108,7 @@ const renderProjects = () => {
 };
 
 const fetchProjects = async () => {
-  Object.assign(projectState, { status: 'loading' });
+  projectState.status = 'loading';
   renderProjects();
 
   try {
