@@ -26,7 +26,7 @@
 | OS          | macOS 27.0.1                               |
 | 에디터      | VSCode 1.142.0 (Live Server 확장)          |
 | 브라우저    | Chrome 155.0.8059.85                       |
-| 언어        | HTML5, CSS3, JavaScript (ES6+)             |
+| 사용 기술   | HTML5, CSS3, JavaScript (ES6+)             |
 | 외부 의존성 | 없음 (라이브러리, 웹 폰트 미사용. 아이콘은 이모지) |
 | 배포        | GitHub Pages (`main` 브랜치 루트)          |
 
