@@ -45,6 +45,7 @@
 │   ├── profile.png     # About 프로필 이미지
 │   ├── favicon.svg
 │   └── screenshot-*.png  # README 스크린샷
+├── .gitignore
 └── README.md
 ```
 
