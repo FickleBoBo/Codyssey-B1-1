@@ -3,8 +3,8 @@
 외부 라이브러리 없이 순수 HTML / CSS / JavaScript로 만든 반응형 포트폴리오입니다.
 모든 기능을 **이벤트 → 상태 변경 → 렌더링** 흐름으로 구성했습니다.
 
-- 배포: <!-- TODO: GitHub Pages URL -->
-- 저장소: <!-- TODO: 저장소 URL -->
+- 배포: https://ficklebobo.dev/Codyssey-B1-1/
+- 저장소: https://github.com/FickleBoBo/Codyssey-B1-1
 
 | 데스크톱 | 모바일 | 다크 모드 |
 |---|---|---|
