@@ -3,6 +3,7 @@ const NAV_SCROLL_THRESHOLD = 60;
 const TOP_BTN_THRESHOLD = 300;
 const REVEAL_THRESHOLD = 0.2;
 
+document.documentElement.classList.remove('no-js');
 document.documentElement.classList.add('js');
 
 const escapeHtml = (text = '') =>
