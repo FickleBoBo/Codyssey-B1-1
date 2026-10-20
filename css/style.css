@@ -207,21 +207,6 @@ p {
   width: 18px;
   height: 2px;
   background-color: currentColor;
-  transition:
-    transform var(--transition),
-    opacity var(--transition);
-}
-
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(6px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-6px) rotate(-45deg);
 }
 
 /* Buttons */
@@ -582,8 +567,8 @@ p {
   background-color: var(--color-primary-hover);
 }
 
-/* Scroll reveal (JS 활성 시에만 숨김 → 미지원 환경에서도 콘텐츠 보장) */
-.js .reveal {
+/* Scroll reveal */
+.reveal {
   opacity: 0;
   transform: translateY(24px);
   transition:
@@ -591,22 +576,9 @@ p {
     transform 0.6s ease;
 }
 
-.js .reveal.visible {
+.reveal.visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-  }
 }
 
 /* Tablet: 768px+ */

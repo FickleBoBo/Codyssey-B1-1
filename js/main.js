@@ -3,9 +3,6 @@ const NAV_SCROLL_THRESHOLD = 60;
 const TOP_BTN_THRESHOLD = 300;
 const REVEAL_THRESHOLD = 0.2;
 
-document.documentElement.classList.remove("no-js");
-document.documentElement.classList.add("js");
-
 const escapeHtml = (text = "") =>
   text.replace(
     /[&<>"']/g,
@@ -26,7 +23,6 @@ const nav = { menuOpen: false, scrollY: 0 };
 const renderNav = () => {
   const { menuOpen, scrollY } = nav;
   navMenu.classList.toggle("active", menuOpen);
-  hamburger.classList.toggle("active", menuOpen);
   hamburger.setAttribute("aria-expanded", menuOpen);
   header.classList.toggle(
     "scrolled",
@@ -63,24 +59,7 @@ scrollTopBtn.addEventListener("click", () =>
 /* ---------- 다크 모드 ---------- */
 const themeToggle = document.querySelector("#theme-toggle");
 
-const storage = {
-  get: (key) => {
-    try {
-      return localStorage.getItem(key);
-    } catch {
-      return null;
-    }
-  },
-  set: (key, value) => {
-    try {
-      localStorage.setItem(key, value);
-    } catch {
-      /* 저장 불가 환경 */
-    }
-  },
-};
-
-const themeState = { dark: storage.get("theme") === "dark" };
+const themeState = { dark: localStorage.getItem("theme") === "dark" };
 
 const renderTheme = () => {
   const { dark } = themeState;
@@ -95,7 +74,7 @@ const renderTheme = () => {
 
 themeToggle.addEventListener("click", () => {
   themeState.dark = !themeState.dark;
-  storage.set("theme", themeState.dark ? "dark" : "light");
+  localStorage.setItem("theme", themeState.dark ? "dark" : "light");
   renderTheme();
 });
 
@@ -212,7 +191,6 @@ const renderForm = () => {
     const message = touched.has(field) || submitted ? getError(field) : "";
     document.querySelector(`#${field}-error`).textContent = message;
     form.elements[field].classList.toggle("invalid", Boolean(message));
-    form.elements[field].setAttribute("aria-invalid", Boolean(message));
   });
 };
 
